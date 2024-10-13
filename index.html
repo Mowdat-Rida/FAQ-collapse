@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>FAQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <h1>Frequently Asked Questions</h1>
+  <body class="bg-gradient-to-r from-gray-100 to-purple-200 ">
+    <h1 >Frequently Asked Questions</h1>
     <div class="faq-container">
-      <div class="faq active">
+      <div class="faq active bg-blue-50">
         <h3 class="faq-title">
           Why shouldn't we trust atoms?
         </h3>
@@ -19,13 +31,13 @@
           They make up everything
         </p>
 
-        <button class="faq-toggle">
-          <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-times"></i>
+        <button class="faq-toggle tran ">
+          <i class="fas fa-chevron-down animate-pulse flex space-x-4  " ></i>
+          <i class="fas fa-times md:animate-pulse flex space-x-4  lg:motion-safe:animate-spin h-5 w-5 md:animate-none sm:animate-none "></i>
         </button>
       </div>
 
-      <div class="faq">
+      <div class="faq bg-blue-50">
         <h3 class="faq-title">
           What do you call someone with no body and no nose?
         </h3>
@@ -33,12 +45,12 @@
           Nobody knows.
         </p>
         <button class="faq-toggle">
-          <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-chevron-down animate-pulse flex space-x-4"></i>
+          <i class="fas fa-times md:animate-pulse flex space-x-4   lg:motion-safe:animate-spin h-5 w-5 md:animate-none sm:animate-none "></i>
         </button>
       </div>
       
-      <div class="faq">
+      <div class="faq bg-blue-50">
         <h3 class="faq-title">
           What's the object-oriented way to become wealthy?
         </h3>
@@ -46,12 +58,12 @@
           Inheritance.
         </p>
         <button class="faq-toggle">
-          <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-chevron-down animate-pulse flex space-x-4"></i>
+          <i class="fas fa-times md:animate-pulse flex space-x-4   lg:motion-safe:animate-spin h-5 w-5 md:animate-none sm:animate-none "></i>
         </button>
       </div>
       
-      <div class="faq">
+      <div class="faq bg-blue-50">
         <h3 class="faq-title">
           How many tickles does it take to tickle an octopus?
         </h3>
@@ -59,12 +71,12 @@
           Ten-tickles!
         </p>
         <button class="faq-toggle">
-          <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-chevron-down animate-pulse flex space-x-4"></i>
+          <i class="fas fa-times md:animate-pulse flex space-x-4   lg:motion-safe:animate-spin h-5 w-5 md:animate-none sm:animate-none "></i>
         </button>
       </div>
       
-      <div class="faq">
+      <div class="faq bg-blue-50">
         <h3 class="faq-title">
           What is: 1 + 1?
         </h3>
@@ -72,8 +84,8 @@
           Depends on who are you asking.
         </p>
         <button class="faq-toggle">
-          <i class="fas fa-chevron-down"></i>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-chevron-down animate-pulse flex space-x-4"></i>
+          <i class="fas fa-times md:animate-pulse flex space-x-4  lg:motion-safe:animate-spin h-5 w-5 md:animate-none sm:animate-none "></i>
         </button>
       </div>
     </div>
